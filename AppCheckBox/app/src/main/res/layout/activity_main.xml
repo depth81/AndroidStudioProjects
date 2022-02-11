@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/etValor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:hint="@string/etValor1"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etValor2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="@string/etValor2"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etValor1" />
+
+    <CheckBox
+        android:id="@+id/cbSuma"
+        android:layout_width="111dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/cbSuma"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etValor2" />
+
+    <CheckBox
+        android:id="@+id/cbResta"
+        android:layout_width="109dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/cbResta"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbSuma" />
+
+    <Button
+        android:id="@+id/btCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="28dp"
+        android:onClick="Calcular"
+        android:text="@string/btCalcular"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbResta" />
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="278dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        android:hint="@string/tvResultado"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btCalcular" />
+</androidx.constraintlayout.widget.ConstraintLayout>

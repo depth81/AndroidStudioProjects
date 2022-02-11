@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginBottom="616dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvMensajeReg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="REGISTRARSE"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginBottom="544dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
+
+        <EditText
+            android:id="@+id/etUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Digite el usuario"
+            android:inputType="textPersonName"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginBottom="469dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
+
+        <EditText
+            android:id="@+id/etNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Digite el nombre"
+            android:inputType="textPersonName"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginBottom="401dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout9">
+
+        <EditText
+            android:id="@+id/etClave1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:textSize="30sp"
+            android:hint="Digite la clave"
+            android:gravity="center"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout11"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginBottom="328dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout10">
+
+        <EditText
+            android:id="@+id/etClave2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Confirme la clave"
+            android:inputType="textPassword"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout12"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginBottom="250dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout11">
+
+        <Button
+            android:id="@+id/btnConsultar"
+            android:layout_width="121dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:onClick="Consultar"
+            android:gravity="center"
+            android:text="Consultar" />
+
+        <Button
+            android:id="@+id/btnAdicionar"
+            android:layout_width="121dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:onClick="Guardar"
+            android:text="Adicionar" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout13"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginBottom="182dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout12">
+
+        <Button
+            android:id="@+id/btnModificar"
+            android:layout_width="121dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:onClick="Modificar"
+            android:gravity="center"
+            android:text="Modificar" />
+
+        <Button
+            android:id="@+id/btnEliminar"
+            android:layout_width="121dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:onClick="Eliminar"
+            android:gravity="center"
+            android:text="Eliminar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="103dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout13">
+
+        <Button
+            android:id="@+id/btnLimpiar"
+            android:layout_width="121dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="Limpiar"
+            android:text="Limpiar"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnRegresarV"
+            android:layout_width="121dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="Regresar"
+            android:text="Regresar"
+            android:textSize="20sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">AppMomento2_Moviles1</string>
+    <string name="tvTitle">APLICACIÓN VIAJES</string>
+    <string name="etCantPersonas">Cantidad de personas que viajan</string>
+    <string name="rbAvion">Avión</string>
+    <string name="rbBus">Bus</string>
+    <string name="rbTaxiExp">Taxi Expreso</string>
+    <string name="tvCostoTte">Costo del transporte</string>
+    <string name="rbLasagna">Lasagna</string>
+    <string name="rbPizza">Pizza</string>
+    <string name="rbHamburguesa">Hamburguesa</string>
+    <string name="tvCostoComida">Costo de la alimentacion</string>
+    <string name="cbPropina">Propina</string>
+    <string name="btCalcular">CALCULAR TOTAL</string>
+    <string name="tvValorPropina">Valor de la propina</string>
+    <string name="tvTotal">TOTAL</string>
+    <string name="btLimpiar">Limpiar</string>
+
+</resources>

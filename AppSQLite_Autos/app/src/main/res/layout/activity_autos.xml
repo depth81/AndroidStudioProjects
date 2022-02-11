@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Autos">
+
+    <LinearLayout
+        android:id="@+id/linearLayout17"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginBottom="622dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvMensajeAutos"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="AUTOS"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout18"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginBottom="547dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout17">
+
+        <EditText
+            android:id="@+id/etPlaca"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Placa"
+            android:inputType="textPersonName"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout19"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginBottom="472dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout18">
+
+        <EditText
+            android:id="@+id/etModelo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Modelo"
+            android:inputType="textPersonName"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout20"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginBottom="397dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout19">
+
+        <EditText
+            android:id="@+id/etMarca"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Marca"
+            android:inputType="textPersonName"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout21"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginBottom="322dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout20">
+
+        <EditText
+            android:id="@+id/etValor"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Valor"
+            android:inputType="textPersonName"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout22"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginBottom="246dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout21">
+
+        <TextView
+            android:id="@+id/tvDisponible"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Disponible:"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvSINO"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="SI / NO" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout23"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginBottom="171dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout22">
+
+        <Button
+            android:id="@+id/btnConsultar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="CONSULTAR"
+            android:onClick="ConsultarAutos"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnAdicionar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="ADICIONAR"
+            android:onClick="GuardarAutos"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout24"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginBottom="96dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout23">
+
+        <Button
+            android:id="@+id/btnModificar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="MODIFICAR"
+            android:onClick="ModificarAutos"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnEliminar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="ELIMINAR"
+            android:onClick="EliminarAutos"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout24">
+
+        <Button
+            android:id="@+id/btnLimpiar"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="LIMPIAR"
+            android:onClick="LimpiarAutos"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnRegresarV"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:onClick="RegresarAutos"
+            android:text="REGRESAR" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginBottom="661dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvAppTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/tvAppTitle"
+            android:textSize="30sp"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <RadioGroup
+            android:id="@+id/rbGroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/rbCasa"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:checked="true"
+                android:onClick="calcularPropiedad"
+                android:text="@string/rbCasa"
+                android:textSize="24sp" />
+
+            <RadioButton
+                android:id="@+id/rbApartamento"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:onClick="calcularPropiedad"
+                android:text="@string/rbApartamento"
+                android:textSize="24sp" />
+
+            <RadioButton
+                android:id="@+id/rbFinca"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:onClick="calcularPropiedad"
+                android:text="@string/rbFinca"
+                android:textSize="24sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginBottom="446dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <TextView
+            android:id="@+id/tvValorProp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/tvValorProp"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="371dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RadioButton
+                android:id="@+id/rbHab1"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:checked="true"
+                android:onClick="calcularHabitaciones"
+                android:text="@string/rbHab1" />
+
+            <RadioButton
+                android:id="@+id/rbHab2"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:onClick="calcularHabitaciones"
+                android:text="@string/rbHab2" />
+
+            <RadioButton
+                android:id="@+id/rbHab3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="calcularHabitaciones"
+                android:text="@string/rbHab3" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="291dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+        <TextView
+            android:id="@+id/tvValorxHab"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/tvValorxHab"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="231dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+        <CheckBox
+            android:id="@+id/cbParqueadero"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:checked="true"
+            android:onClick="calcularParqueadero"
+            android:text="@string/cbParqueadero"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="171dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LinearLayout6">
+
+        <TextView
+            android:id="@+id/tvValorParq"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/tvValorParq"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginBottom="100dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LinearLayout7">
+
+        <Button
+            android:id="@+id/btCalcular"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="calcularTotal"
+            android:shadowColor="#050505"
+            android:text="@string/btCalcular"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
+
+        <TextView
+            android:id="@+id/tvTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/tvTotal"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

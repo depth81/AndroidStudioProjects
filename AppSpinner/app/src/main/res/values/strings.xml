@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AppSpinner</string>
+    <string name="etValor1">Primer valor</string>
+    <string name="etValor2">Segundo valor</string>
+    <string name="tvResultado">Resultado</string>
+    <string name="btnCalcular">CALCULAR</string>
+</resources>

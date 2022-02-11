@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">AppFiesta</string>
+    <string name="tvtitle">APLICACION FIESTA</string>
+    <string name="rbVIP">VIP</string>
+    <string name="rbPalco">PALCO</string>
+    <string name="rbLateral">LATERAL</string>
+    <string name="rbGeneral">GENERAL</string>
+    <string name="etPersonas">Cantidad de personas</string>
+    <string name="tvValorxP">Valor por las personas</string>
+    <string name="rbAguardiente">Aguardiente</string>
+    <string name="rbRon">Ron</string>
+    <string name="rbWhiskey">Whiskey</string>
+    <string name="etBotellas">Botellas consumidas</string>
+    <string name="cbPropinas">Propina</string>
+    <string name="tvValorProp">Valor propina</string>
+    <string name="btCalcular">CALCULAR</string>
+    <string name="tvTotal">TOTAL</string>
+    <string name="tvValorBotellas">Valor Botellas</string>
+
+</resources>

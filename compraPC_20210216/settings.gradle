@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "compraPC_20210216"

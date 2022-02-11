@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">AppArriendos</string>
+    <string name="tvAppTitle">APLICACION ARRIENDOS</string>
+    <string name="rbCasa">Casa</string>
+    <string name="rbApartamento">Apartamento</string>
+    <string name="rbFinca">Finca</string>
+    <string name="tvValorProp">400000</string>
+    <string name="etCantHab">Cantidad de habitaciones</string>
+    <string name="tvValorxHab">100000</string>
+    <string name="cbParqueadero">Parqueadero</string>
+    <string name="tvValorParq">100000</string>
+    <string name="btCalcular">CALCULAR</string>
+    <string name="tvTotal">TOTAL ARRIENDO</string>
+    <string name="rbHab1">Menos de 3 habitaciones</string>
+    <string name="rbHab2">3 o 4 habitaciones</string>
+    <string name="rbHab3">Mas de 4 habitaciones</string>
+</resources>
